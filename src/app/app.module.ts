@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { TemplateModule } from './template/template.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent],
+  declarations: [AppComponent, LayoutComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, TemplateModule],
   providers: [],
   bootstrap: [AppComponent],
