@@ -56,47 +56,41 @@
           />
         </div>
       </div>
-
-      <div class="col-md-6">
-        <div class="form-group">
-          <label>Data cadastro:</label>
-          <input
-            type="text"
-            class="form-control"
-            name="dataCadastro"
-            [ngModel]="photo.createdAt"
-            disabled="true"
-          />
-        </div>
-      </div>
     </div>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="form-group">
-          <label>Nome: *</label>
-          <!--
-          [(ngModel)] is a two-way data binding directive in Angular. It binds the input element to a property
-          on the component and also updates the property when the user makes changes to the input. [ngModel] is
-          one-way data binding, which only binds the input element to the property without updating it.
-          -->
+          <label>Arquivo: *</label>
           <input
-            type="text"
+            type="fyle"
             class="form-control"
-            [(ngModel)]="photo.nome"
-            name="nome"
+            [ngModel]="photo.imageFile"
+            name="imageFile"
           />
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="form-group">
-          <label>CPF: *</label>
+          <label>Descrição: *</label>
           <input
             type="text"
             class="form-control"
             name="cpf"
-            [(ngModel)]="photo.cpf"
+            [(ngModel)]="photo.description"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Id do usuário: *</label>
+          <input
+            type="text"
+            class="form-control"
+            name="cpf"
+            [(ngModel)]="photo.description"
           />
         </div>
       </div>
