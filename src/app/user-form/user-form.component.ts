@@ -23,9 +23,13 @@ export class UserFormComponent implements OnInit {
    * criado ou de um erro.
    */
   ngOnInit(): void {
-    this.service.create(this.user).subscribe(
-      (user) => console.log(user),
-      (error) => console.log(error)
-    );
+    // this.service.create(this.user).subscribe(
+    //   (user) => console.log(user),
+    //   (error) => console.log(error)
+    // );
+  }
+
+  onSubmit(): void {
+    console.log('Formulário submetido');
   }
 }
