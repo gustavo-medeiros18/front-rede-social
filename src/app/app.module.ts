@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './layout/layout.component';
-import { TemplateModule } from './template/template.module';
+import { TableComponent } from './table/table.component';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, TemplateModule],
+  declarations: [AppComponent, TableComponent, HomeComponent, UserFormComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
